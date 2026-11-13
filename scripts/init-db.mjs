@@ -67,7 +67,7 @@ try {
       const hash = await bcrypt.hash(process.env.ADMIN_PASSWORD || "Admin2026*", 10);
       await conn.query(
         "INSERT INTO usuarios (nombre, email, passwordHash, rol, activo, createdAt, updatedAt) VALUES (?, ?, ?, 'ADMINISTRADOR', true, NOW(3), NOW(3))",
-        ["Administrador", (process.env.ADMIN_EMAIL || "admin@forjagym.co").toLowerCase(), hash],
+        ["Administrador", (process.env.ADMIN_EMAIL || "admin@espartagym.co").toLowerCase(), hash],
       );
       const planes = [
         ["BASE", "Plan Base", "Mensual. Acceso libre a zona de musculación y cardio.", "MENSUAL", 30, 120000, 0, 0, false, false, 0, false, 1, "05:00", "22:00", "1,2,3,4,5,6"],

@@ -6,9 +6,9 @@
 |---|---|---|---|
 | `DATABASE_URL` | Sí | `mysql://root:clave@localhost:3306/gym_access` | Conexión MySQL (Prisma, init-db y seed) |
 | `NEXTAUTH_SECRET` | Sí | `k3J9…` (32+ caracteres aleatorios) | Firma de los JWT de sesión |
-| `NEXTAUTH_URL` | Sí en producción | `https://forja-gym.up.railway.app` | URL pública usada por NextAuth |
+| `NEXTAUTH_URL` | Sí en producción | `https://esparta-gym.up.railway.app` | URL pública usada por NextAuth |
 | `APP_TIMEZONE` | No (default `America/Bogota`) | `America/Bogota` | Horarios de acceso, “hoy”, cierres de caja |
-| `NEXT_PUBLIC_GYM_NAME` | No | `Forja Gym` | Nombre visible (se incrusta en el build) |
+| `NEXT_PUBLIC_GYM_NAME` | No | `Esparta Gym` | Nombre visible (se incrusta en el build) |
 | `SEED_ON_EMPTY` | No (default `true`) | `true` / `false` | Qué hacer si la BD está vacía al arrancar |
 | `ADMIN_EMAIL` / `ADMIN_PASSWORD` | No | `admin@migym.co` / `Clave2026*` | Administrador inicial cuando `SEED_ON_EMPTY=false` |
 | `DB_POOL_SIZE` | No (default 8) | `8` | Conexiones simultáneas del pool |
@@ -80,7 +80,7 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
    NEXTAUTH_SECRET=<secreto aleatorio>
    NEXTAUTH_URL=https://<dominio-generado>.up.railway.app
    APP_TIMEZONE=America/Bogota
-   NEXT_PUBLIC_GYM_NAME=Forja Gym
+   NEXT_PUBLIC_GYM_NAME=Esparta Gym
    SEED_ON_EMPTY=true
    ```
    `${{MySQL.MYSQL_URL}}` es una *variable de referencia*: Railway la reemplaza por la URL interna (`mysql.railway.internal`), más rápida y sin costo de egress.
@@ -100,7 +100,7 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
    ✔ Seed completado: ACTIVO=26, VENCIDO=6, CONGELADO=3, BLOQUEADO_POR_MORA=3
    ▲ Next.js 14.2.35 - Local: http://localhost:8080
    ```
-8. Abre el dominio e inicia sesión con `admin@forjagym.co / Admin2026*`. **Cambia las contraseñas** en *Usuarios y roles*.
+8. Abre el dominio e inicia sesión con `admin@espartagym.co / Admin2026*`. **Cambia las contraseñas** en *Usuarios y roles*.
 
 ### Despliegues siguientes
 

@@ -1,4 +1,4 @@
-# Forja Gym · Sistema Integral de Control de Acceso y Gestión de Membresías
+# Esparta Gym · Sistema Integral de Control de Acceso y Gestión de Membresías
 
 Aplicación full-stack para gimnasios: validación de ingreso por **documento o código QR**, gestión de socios y membresías, **congelamientos** que recalculan el vencimiento, **pases de cortesía**, **alertas de mora y vencimiento**, **caja por turno**, **reportes gerenciales** (CSV / PDF) y **clases grupales con control de aforo**. Incluye autenticación con cuatro roles y permisos por módulo.
 
@@ -134,12 +134,12 @@ git push -u origin main
 
 | Rol | Correo | Contraseña |
 |---|---|---|
-| Administrador | `admin@forjagym.co` | `Admin2026*` |
-| Recepcionista | `recepcion@forjagym.co` | `Recepcion2026*` (tiene la caja de hoy abierta) |
-| Recepcionista 2 | `recepcion2@forjagym.co` | `Recepcion2026*` |
-| Instructor | `instructor@forjagym.co` | `Instructor2026*` |
-| Instructor 2 | `instructor2@forjagym.co` | `Instructor2026*` |
-| Finanzas | `finanzas@forjagym.co` | `Finanzas2026*` |
+| Administrador | `admin@espartagym.co` | `Admin2026*` |
+| Recepcionista | `recepcion@espartagym.co` | `Recepcion2026*` (tiene la caja de hoy abierta) |
+| Recepcionista 2 | `recepcion2@espartagym.co` | `Recepcion2026*` |
+| Instructor | `instructor@espartagym.co` | `Instructor2026*` |
+| Instructor 2 | `instructor2@espartagym.co` | `Instructor2026*` |
+| Finanzas | `finanzas@espartagym.co` | `Finanzas2026*` |
 
 **Documentos para probar el kiosko:**
 

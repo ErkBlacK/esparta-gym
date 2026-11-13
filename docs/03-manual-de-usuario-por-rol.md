@@ -125,7 +125,7 @@ Todo lo anterior, más:
    - `2020202020` → **rojo**: *Membresía vencida*;
    - `3030303030` → **rojo**: *Saldo pendiente*;
    - `4040404040` → **rojo**: *Membresía congelada*.
-3. **Resolver la mora:** perfil del socio `3030303030` → *Abonar* el saldo → volver al kiosko → ahora **verde** (iniciar sesión como `recepcion@forjagym.co`, que tiene la caja abierta).
+3. **Resolver la mora:** perfil del socio `3030303030` → *Abonar* el saldo → volver al kiosko → ahora **verde** (iniciar sesión como `recepcion@espartagym.co`, que tiene la caja abierta).
 4. **Congelamiento:** congelar 7 días un Elite y mostrar el nuevo vencimiento en el perfil.
 5. **Pase diario + abono:** registrar un socio nuevo → vender *Pase Diario* → vender *Plan Base*: aparece el abono de $25.000.
 6. **Invitados:** registrar un invitado a un Pro (1/mes) y repetir para mostrar *Cupo agotado*.

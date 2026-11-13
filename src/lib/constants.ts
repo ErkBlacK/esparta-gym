@@ -47,4 +47,4 @@ export const QR_PREFIX = "GYM-";
 /** Cantidad de lockers disponibles para asignar automáticamente. */
 export const TOTAL_LOCKERS = 120;
 
-export const GYM_NAME = process.env.NEXT_PUBLIC_GYM_NAME || "Forja Gym";
+export const GYM_NAME = process.env.NEXT_PUBLIC_GYM_NAME || "Esparta Gym";

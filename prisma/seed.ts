@@ -69,12 +69,12 @@ async function main() {
 
   console.log("→ Usuarios y roles");
   const usuariosData = [
-    { nombre: "Laura Méndez", email: "admin@forjagym.co", password: "Admin2026*", rol: "ADMINISTRADOR" as const },
-    { nombre: "Andrés Rojas", email: "recepcion@forjagym.co", password: "Recepcion2026*", rol: "RECEPCIONISTA" as const },
-    { nombre: "Valentina Cruz", email: "recepcion2@forjagym.co", password: "Recepcion2026*", rol: "RECEPCIONISTA" as const },
-    { nombre: "Camila Torres", email: "instructor@forjagym.co", password: "Instructor2026*", rol: "INSTRUCTOR" as const },
-    { nombre: "Julián Pardo", email: "instructor2@forjagym.co", password: "Instructor2026*", rol: "INSTRUCTOR" as const },
-    { nombre: "Sofía Herrera", email: "finanzas@forjagym.co", password: "Finanzas2026*", rol: "FINANZAS" as const },
+    { nombre: "Laura Méndez", email: "admin@espartagym.co", password: "Admin2026*", rol: "ADMINISTRADOR" as const },
+    { nombre: "Andrés Rojas", email: "recepcion@espartagym.co", password: "Recepcion2026*", rol: "RECEPCIONISTA" as const },
+    { nombre: "Valentina Cruz", email: "recepcion2@espartagym.co", password: "Recepcion2026*", rol: "RECEPCIONISTA" as const },
+    { nombre: "Camila Torres", email: "instructor@espartagym.co", password: "Instructor2026*", rol: "INSTRUCTOR" as const },
+    { nombre: "Julián Pardo", email: "instructor2@espartagym.co", password: "Instructor2026*", rol: "INSTRUCTOR" as const },
+    { nombre: "Sofía Herrera", email: "finanzas@espartagym.co", password: "Finanzas2026*", rol: "FINANZAS" as const },
   ];
   const usuarios: Record<string, number> = {};
   for (const u of usuariosData) {
@@ -83,10 +83,10 @@ async function main() {
     });
     usuarios[u.email] = creado.id;
   }
-  const recep1 = usuarios["recepcion@forjagym.co"]!;
-  const recep2 = usuarios["recepcion2@forjagym.co"]!;
-  const instr1 = usuarios["instructor@forjagym.co"]!;
-  const instr2 = usuarios["instructor2@forjagym.co"]!;
+  const recep1 = usuarios["recepcion@espartagym.co"]!;
+  const recep2 = usuarios["recepcion2@espartagym.co"]!;
+  const instr1 = usuarios["instructor@espartagym.co"]!;
+  const instr2 = usuarios["instructor2@espartagym.co"]!;
 
   console.log("→ Planes base");
   const planesData = [
@@ -516,8 +516,8 @@ async function main() {
 
   const resumen = await prisma.socio.groupBy({ by: ["estado"], _count: true });
   console.log("✔ Seed completado:", resumen.map((r) => `${r.estado}=${r._count}`).join(", "));
-  console.log("  Usuarios: admin@forjagym.co / Admin2026*  ·  recepcion@forjagym.co / Recepcion2026*");
-  console.log("            instructor@forjagym.co / Instructor2026*  ·  finanzas@forjagym.co / Finanzas2026*");
+  console.log("  Usuarios: admin@espartagym.co / Admin2026*  ·  recepcion@espartagym.co / Recepcion2026*");
+  console.log("            instructor@espartagym.co / Instructor2026*  ·  finanzas@espartagym.co / Finanzas2026*");
 }
 
 main()

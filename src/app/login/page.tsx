@@ -35,9 +35,9 @@ export default async function LoginPage() {
               ))}
             </div>
             <h1 className="text-3xl font-semibold leading-tight tracking-tight">
-              Acceso, membresías y caja
+              Disciplina en cada acceso,
               <br />
-              <span className="text-muted">en un solo lugar.</span>
+              <span className="text-muted">poder en cada membresía.</span>
             </h1>
             <p className="mt-4 text-[13px] leading-relaxed text-muted">
               Validación por documento o QR en menos de un segundo, congelamientos que recalculan vencimientos, pases de cortesía, cierres de caja por turno y reportes gerenciales.
@@ -57,10 +57,10 @@ export default async function LoginPage() {
           <div className="mt-8 rounded-xl border border-dashed border-line p-4 text-2xs leading-relaxed text-muted">
             <div className="mb-1.5 font-medium text-fg">Cuentas de demostración</div>
             <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 font-mono">
-              <span>admin@forjagym.co</span><span className="text-subtle">Admin2026*</span>
-              <span>recepcion@forjagym.co</span><span className="text-subtle">Recepcion2026*</span>
-              <span>instructor@forjagym.co</span><span className="text-subtle">Instructor2026*</span>
-              <span>finanzas@forjagym.co</span><span className="text-subtle">Finanzas2026*</span>
+              <span>admin@espartagym.co</span><span className="text-subtle">Admin2026*</span>
+              <span>recepcion@espartagym.co</span><span className="text-subtle">Recepcion2026*</span>
+              <span>instructor@espartagym.co</span><span className="text-subtle">Instructor2026*</span>
+              <span>finanzas@espartagym.co</span><span className="text-subtle">Finanzas2026*</span>
             </div>
           </div>
         </div>

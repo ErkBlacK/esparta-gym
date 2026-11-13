@@ -35,7 +35,7 @@ export function LoginForm() {
     <form onSubmit={enviar} className="mt-6 space-y-4">
       <label className="block">
         <span className="label">Correo</span>
-        <input name="email" type="email" required autoComplete="username" className="input h-10" placeholder="nombre@forjagym.co" />
+        <input name="email" type="email" required autoComplete="username" className="input h-10" placeholder="nombre@espartagym.co" />
       </label>
       <label className="block">
         <span className="label">Contraseña</span>
